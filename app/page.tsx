@@ -1,7 +1,12 @@
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-const inter = Inter({ subsets: ['latin'] })
+import Navbar from "./components/Navbar/page";
+import HeroSection from "./components/Herosection/page";
+import Member from "./components/Member/page";
 
 export default function Home() {
-  return <h1 className="text-3xl font-bold underline">Hello MBKS😶!</h1>;
+  return (
+    <div>
+      <HeroSection />
+      <Member />
+    </div>
+  );
 }
